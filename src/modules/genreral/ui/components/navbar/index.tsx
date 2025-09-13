@@ -28,7 +28,7 @@ export const Navbar = () =>{
     return(
         <nav className="fixed top-0 h-16 bg-transparent w-full flex justify-end items-center gap-2 pr-2">
             {items.map((item) => (
-                <Link href={item.url} scroll={false} key={item.title}>
+                <Link href={item.url} key={item.title}>
                     <Button 
                     className="bg-transparent hover:cursor-pointer"
                     >
