@@ -4,6 +4,8 @@ import { Hero } from "@/modules/home/ui/components/hero/index";
 
 import Image from "next/image";
 import { Raleway } from "next/font/google";
+import { Contact } from "@/modules/genreral/ui/components/contact";
+import { Footer } from "@/modules/genreral/ui/components/footer/footer";
 
 const raleway = Raleway({ subsets: ["latin"]});
 
@@ -56,7 +58,9 @@ export default function Home() {
       </div>
       {/* What I built */}
       {/* Get in touch */}
+      <Contact/>
       {/* Footer */}
+      <Footer/>
     </div>
   );
 }
