@@ -1,11 +1,13 @@
 import { Button } from "@/components/ui/button";
+import Image from "next/image";
+
+import { Raleway } from "next/font/google";
+
 import { ExperienceSection } from "@/modules/genreral/ui/components/experience-section/index";
 import { Hero } from "@/modules/home/ui/components/hero/index";
-
-import Image from "next/image";
-import { Raleway } from "next/font/google";
 import { Contact } from "@/modules/genreral/ui/components/contact";
 import { Footer } from "@/modules/genreral/ui/components/footer/footer";
+import { Resume } from "@/modules/genreral/ui/components/resume";
 
 const raleway = Raleway({ subsets: ["latin"]});
 
@@ -43,24 +45,12 @@ export default function Home() {
       {/* Technologies */}
       <ExperienceSection/>
       {/* Cv */}
-      <div className="w-full bg-[url('/resume-backdrop.jpg')] bg-fixed bg-center bg-cover relative">
-        <div className="w-full h-full absolute top-0 left-0 bg-black opacity-40 z-0">
-
-        </div>
-        <div className="relative z-10 w-full h-72 flex flex-col items-center justify-center gap-4">
-          <span className={`text-4xl ${raleway.className} text-white`}>CHECK OUT MY RESUME</span>
-          {/* TODO: add cv download on click */}
-          <Button>
-            Grab A Copy
-          </Button>
-        </div>
-        
-      </div>
+      <Resume/>
       {/* What I built */}
       {/* Get in touch */}
       <Contact/>
       {/* Footer */}
       <Footer/>
     </div>
-  );
+  ); 
 }
