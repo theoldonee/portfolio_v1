@@ -14,7 +14,7 @@ export function AnimatedSelfCarousel() {
     const interval = setInterval(() => {
       // Move to the next item, or wrap back to 0 if we've reached the end
       setCurrentIndex((prevIndex) => (prevIndex + 1) % items.length);
-    }, 200); // Total cycle time: 2 seconds per item
+    }, 2000); // Total cycle time: 2 seconds per item
 
     // Cleanup function: clear the interval when component unmounts
     return () => clearInterval(interval);

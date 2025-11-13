@@ -18,7 +18,7 @@ export function Contact(){
             <span
             className="text-3xl"
             >GET IN TOUCH</span>
-            <span>If you'd like to collaborate on a project or have a quick chat feel free to</span>
+            <span>If you&apos;d like to collaborate on a project or have a quick chat feel free to</span>
             <Button
             className={`bg-transparent border-black border-1 text-black ${raleway.className} hover:text-white`}
             >Say Hello</Button>

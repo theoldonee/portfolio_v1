@@ -1,6 +1,6 @@
 import Link from "next/link";
 
-var items = [
+const items = [
     {
         "title":"Git",
         "element": <i className="fa-brands fa-github"></i>,
