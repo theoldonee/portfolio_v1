@@ -1,4 +1,4 @@
-import { GeneralLayout } from "@/modules/genreral/ui/layout/general-layout";
+import { GeneralLayout } from "@/modules/general/ui/layout/general-layout";
 
 interface HomeLayoutProps{
     children: React.ReactNode;

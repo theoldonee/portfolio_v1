@@ -1,13 +1,14 @@
 import { Button } from "@/components/ui/button";
 import Image from "next/image";
+import Link from "next/link";
 
 import { Raleway } from "next/font/google";
 
-import { ExperienceSection } from "@/modules/genreral/ui/components/experience-section/index";
+import { ExperienceSection } from "@/modules/general/ui/components/experience-section/index";
 import { Hero } from "@/modules/home/ui/components/hero/index";
-import { Contact } from "@/modules/genreral/ui/components/contact";
-import { Footer } from "@/modules/genreral/ui/components/footer/footer";
-import { Resume } from "@/modules/genreral/ui/components/resume";
+import { Contact } from "@/modules/general/ui/components/contact";
+import { Footer } from "@/modules/general/ui/components/footer/footer";
+import { Resume } from "@/modules/general/ui/components/resume";
 
 const raleway = Raleway({ subsets: ["latin"]});
 
@@ -33,10 +34,12 @@ export default function Home() {
           Lorem ipsum dolor sit amet consectetur adipisicing elit. Quo dolore maiores expedita obcaecati error provident fugiat nostrum esse. Magni, eligendi? Incidunt aliquam exercitationem ab libero est quia eius minus officia?
           Lorem ipsum dolor sit amet consectetur adipisicing elit. Nisi ex eligendi porro eveniet repellendus asperiores doloremque harum! Sapiente dolores maxime saepe nobis assumenda, itaque sequi unde pariatur vitae odit quos!
         </span> 
-        {/* TODO: link to me page */}
-        <Button>
-          More About Me
-        </Button>
+        {/* Link to interests/passions page */}
+        <Link href="/interests">
+          <Button>
+            More About Me
+          </Button>
+        </Link>
       </div>
       {/* Interest */}
       <div id="Passion" className="w-full h-[calc(100vh-200px)] flex items-center justify-center gap-3.5 bg-amber-300">
