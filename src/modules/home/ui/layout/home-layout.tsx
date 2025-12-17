@@ -6,10 +6,8 @@ interface HomeLayoutProps{
 
 export function HomeLayout({children}: HomeLayoutProps){
     return(
-        <>
         <GeneralLayout>
             {children}
         </GeneralLayout>
-        </> 
     );
 }
