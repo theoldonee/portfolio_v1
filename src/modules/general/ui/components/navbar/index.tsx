@@ -18,8 +18,8 @@ const items =[
         url:"#Experience"
     },
     {
-        title:"Work",
-        url:"#About"
+        title:"Works",
+        url:"#Works"
     },
     {
         title:"Contact",
@@ -38,11 +38,12 @@ export const Navbar = () =>{
             let currentSection = null;
 
             // Find which section we're in by checking all sections with IDs
-            const sections = document.querySelectorAll('[id]');
+            // Filter out script, style, and other non-content elements
+            const sections = document.querySelectorAll('[id]:not(script):not(style):not(link):not(meta)');
             sections.forEach((section) => {
                 const rect = section.getBoundingClientRect();
                 // Check if this section is at the top of the viewport (where navbar is)
-                if (rect.top <= 80 && rect.bottom >= 80) {
+                if (rect.top <= 40 && rect.bottom >= 0) {
                     currentSection = section.id;
                 }
             });
@@ -78,14 +79,14 @@ export const Navbar = () =>{
             {items.map((item) => (
                 <Link href={item.url} key={item.title}>
                     <Button 
-                    className={`bg-transparent hover:cursor-pointer transition-colors duration-300 font-semibold`}
+                    className={`bg-transparent hover:cursor-pointer duration-300 font-semibold`}
                     style={{
-                        color: textColor
+                        color: textColor,
                     }}
                     >
                         <span>{item.title}</span>
                     </Button>
-                </Link>
+                </Link>    
             ))}
         </nav>
     );
