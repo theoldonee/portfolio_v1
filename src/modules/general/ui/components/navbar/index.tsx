@@ -10,10 +10,6 @@ const items =[
         url:"#About"
     },
     {
-        title:"Passion",
-        url:"#Passion"
-    },
-    {
         title:"Experience",
         url:"#Experience"
     },
@@ -28,7 +24,7 @@ const items =[
 ];
 
 // Sections with light/white backgrounds that need black text
-const LIGHT_BACKGROUND_SECTIONS = ['About', 'Passion'];
+const LIGHT_BACKGROUND_SECTIONS = ['About', 'Experience'];
 
 export const Navbar = () =>{
     const [textColor, setTextColor] = useState('white');
