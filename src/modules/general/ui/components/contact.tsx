@@ -8,7 +8,7 @@ const raleway = Raleway({
 
 export function Contact(){
     return(
-        <div className="w-full, h-90 bg-gray-300 flex flex-col items-center justify-center gap-3" id="Contact">
+        <div className="w-full, h-90 bg-gray-300 flex flex-col items-center justify-center gap-3 z-10" id="Contact">
             <Image
             width={60}
             height={60}
