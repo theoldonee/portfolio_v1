@@ -7,7 +7,7 @@ import {About } from "@/modules/home/ui/components/about/index";
 import { Contact } from "@/modules/general/ui/components/contact";
 import { Footer } from "@/modules/general/ui/components/footer/footer";
 import { Resume } from "@/modules/general/ui/components/resume";
-import { Works } from "@/modules/home/ui/components/works/indx";
+import { Works } from "@/modules/home/ui/components/works/index";
 
 const raleway = Raleway({ subsets: ["latin"]});
 
