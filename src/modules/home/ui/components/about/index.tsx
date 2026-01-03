@@ -2,13 +2,13 @@ import Image from "next/image";
 import Link from "next/link";
 import { Button } from "@/components/ui/button";
 import { Raleway } from "next/font/google";
-import { about_me } from "@/modules/home/data/about_data";
+import { aboutMe } from "@/modules/home/data/about-data";
 
 const raleway = Raleway({ subsets: ["latin"]});
 
 export const About = () =>{
     return (
-        <div id="About" className="w-full h-[calc(100vh-200px)] bg-white flex flex-col items-center justify-center gap-3.5">
+      <div id="About" className="w-full h-[calc(100vh-200px)] bg-white flex flex-col items-center justify-center gap-3.5">
         <span
           className={`text-4xl ${raleway.className}`}
         >ABOUT ME</span>
@@ -20,7 +20,7 @@ export const About = () =>{
           className="w-52 h-52 border rounded-full"
         />
         <span className="w-200">
-            {about_me}
+            {aboutMe}
         </span> 
         {/* Link to interests/passions page */}
         <Link href="/interests">
