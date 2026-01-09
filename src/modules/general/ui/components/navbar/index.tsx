@@ -71,7 +71,7 @@ export const Navbar = () =>{
     }, []);
 
     return(
-        <nav className="fixed top-0 h-16 bg-transparent w-full flex justify-end items-center gap-2 pr-2 z-10">
+        <nav className="fixed top-0 h-16 bg-transparent w-full flex justify-end items-center gap-2 pr-2 z-100">
             {items.map((item) => (
                 <Link href={item.url} key={item.title}>
                     <Button 
