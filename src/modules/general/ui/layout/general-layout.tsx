@@ -1,14 +1,22 @@
-import { Navbar } from "../components/navbar";
+import { Contact } from "../components/contact";
+import { Footer } from "../components/footer/footer";
+import { Resume } from "../components/resume";
 
 interface GeneralLayoutProps{
     children: React.ReactNode;
 }
 
-export const GeneralLayout = ({children}:GeneralLayoutProps) =>{
+export const 
+GeneralLayout = ({children}:GeneralLayoutProps) =>{
     return(
         <div className="w-full"> 
-          <Navbar />
             {children}
+            {/* Cv */}
+            <Resume/>
+            {/* Get in touch */}
+            <Contact/>
+            {/* Footer */}
+            <Footer/>
         </div>
     );
 }
