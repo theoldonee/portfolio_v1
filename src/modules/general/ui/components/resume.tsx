@@ -7,7 +7,7 @@ const raleway = Raleway({ subsets: ["latin"]});
 
 export function Resume(){
     return(
-        <div className="w-full bg-[url('/resume-backdrop.jpg')] bg-fixed bg-center bg-cover relative">
+        <div className="w-full bg-[url('/resume-backdrop.jpg')] bg-fixed bg-center bg-cover relative z-9">
         <div className="w-full h-full absolute top-0 left-0 bg-black opacity-40 z-0">
 
         </div>

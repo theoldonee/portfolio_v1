@@ -3,7 +3,7 @@ import { SocialMedia } from "./social-media"
 
 export function Footer(){
     return(
-        <div className="w-full h-70 flex flex-col bg-stone-900 items-center justify-center gap-2 z-10">
+        <div className="w-full h-70 flex flex-col bg-stone-900 items-center justify-center gap-2 relative z-10">
             <SocialMedia/>
             <Image
             width={80}
