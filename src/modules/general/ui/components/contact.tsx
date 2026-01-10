@@ -12,7 +12,7 @@ export function Contact(){
             <Image
             width={60}
             height={60}
-            src="contact/mail-heart.svg"
+            src="/contact/mail-heart.svg"
             alt="mail-heart.svg"
             />
             <span

@@ -8,7 +8,7 @@ export function Footer(){
             <Image
             width={80}
             height={80}
-            src="alien-ship.svg"
+            src="/alien-ship.svg"
             alt="alien-ship"
             />
             <span className="text-white">Favour Esset 2025</span>
