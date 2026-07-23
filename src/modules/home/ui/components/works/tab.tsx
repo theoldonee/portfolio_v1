@@ -1,16 +1,16 @@
 "use client";
 
-import { AnimatePresence, motion } from "framer-motion";
+import { AnimatePresence, motion, type Variants } from "framer-motion";
 import { useState, useEffect, useRef } from "react";
 import { tabItems, tabItemsIcons } from "@/modules/home/data/works-data";
 
-const leftVariants = {
-    initial: { y: -700 },
+const leftVariants: Variants = {
+    initial: { y: -700},
     animate: { y: 0, transition: { duration: 2, ease: "easeOut" } },
     exit: { y: 700, transition: { duration: 2, ease: "easeOut" } }
 };
 
-const rightVariants = {
+const rightVariants: Variants = {
     initial: { y: 700 },
     animate: { y: 0, transition: { duration: 2, ease: "easeOut" } },
     exit: { y: -700, transition: { duration: 2, ease: "easeOut" } }
