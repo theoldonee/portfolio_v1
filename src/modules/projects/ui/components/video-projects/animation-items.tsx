@@ -20,9 +20,9 @@ export const Camera = ({yProgressSECC, yProgressCCES}: {yProgressSECC: MotionVal
     // for lens scaling
     const scale2 = useTransform(yProgressCCES, [0, 1], [1, 1.5]);
 
-    const blur = useTransform(yProgressSECC, [0, 1], [0, 1.3]);
+    // const blur = useTransform(yProgressSECC, [0, 1], [0, 1.3]);
 
-    const rotateZ = useTransform(yProgressSECC, [0, 1], [0, 100]);
+    // const rotateZ = useTransform(yProgressSECC, [0, 1], [0, 100]);
 
     const translateY = useTransform(yProgressSECC, [0, 1], [0, 0]);
 

@@ -1,7 +1,7 @@
 "use client";
 
 import { AnimatePresence, motion, type Variants } from "framer-motion";
-import { useState, useEffect, useRef } from "react";
+import { useState, useEffect, } from "react";
 import { tabItems, tabItemsIcons } from "@/modules/home/data/works-data";
 
 const leftVariants: Variants = {
@@ -16,12 +16,14 @@ const rightVariants: Variants = {
     exit: { y: -700, transition: { duration: 2, ease: "easeOut" } }
 };
 
+
+
 export const Tabs = () => {
 
     const [itemIndex, setItemIndex] = useState(0);
     const [isAnimating, setIsAnimating] = useState(true);
 
-    var timeOut = 8000;
+    let timeOut = 8000;
 
     useEffect(() => {
         
@@ -35,7 +37,7 @@ export const Tabs = () => {
         const interval = setInterval(updateItemIndex, timeOut);
         return () => clearInterval(interval);
 
-    }, [isAnimating]);
+    }, [isAnimating, timeOut]);
 
     const handleMouseEnter = () => {
         setIsAnimating(false);
