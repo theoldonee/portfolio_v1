@@ -55,7 +55,7 @@ export const Tabs = () => {
     }
 
     const redirect = () => {
-        window.location.replace(`projects/${tabItems[itemIndex].url}`);
+        window.location.assign(`projects/${tabItems[itemIndex].url}`);
     }
 
     return(
