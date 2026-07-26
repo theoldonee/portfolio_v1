@@ -28,6 +28,8 @@ const LIGHT_BACKGROUND_SECTIONS = ['About', 'Experience'];
 
 export const Navbar = () =>{
     const [textColor, setTextColor] = useState('white');
+    const [isHover, setIsHover] = useState(false);
+    const [hoveredBtn, setHoveredBtn] = useState("");
 
     useEffect(() => {
         const handleScroll = () => {
@@ -76,9 +78,9 @@ export const Navbar = () =>{
                 <Link href={item.url} key={item.title}>
                     <Button 
                     className={`bg-transparent hover:cursor-pointer duration-300 font-semibold`}
-                    style={{
-                        color: textColor,
-                    }}
+                    style={{color: (isHover && (item.title == hoveredBtn))? "white" : textColor }}
+                    onMouseEnter={() => {setIsHover(true); setHoveredBtn(item.title)}}
+                    onMouseLeave={() => {setIsHover(false); setHoveredBtn("")}}
                     >
                         <span>{item.title}</span>
                     </Button>
